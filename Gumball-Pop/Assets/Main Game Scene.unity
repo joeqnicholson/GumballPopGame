@@ -20,11 +20,11 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.43810073, g: 0.46502313, b: 0.5188679, a: 1}
+  m_AmbientSkyColor: {r: 1, g: 1, b: 1, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 0
+  m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 0}
   m_HaloStrength: 0.5
@@ -243,7 +243,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 4.747815
+  orthographic size: 4.682792
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -359,7 +359,7 @@ Light:
   m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 4
+  m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
@@ -373,13 +373,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 639574349}
-  m_LocalRotation: {x: 0.19807704, y: -0.17697997, z: 0.24963455, w: 0.9311961}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -7.75, y: 3.44, z: -1.45}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 27.210001, y: -15.036, z: 26.355001}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &797821587 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 397053888177503780, guid: f5554f5049cf449048e119a2bf78be92,
@@ -597,7 +597,7 @@ Canvas:
   m_RenderMode: 0
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
-  m_PixelPerfect: 0
+  m_PixelPerfect: 1
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
@@ -909,7 +909,12 @@ PrefabInstance:
     - target: {fileID: 3832318452458034596, guid: 3469048253f694a10a8e2ed2f6eb7e7b,
         type: 3}
       propertyPath: orthographic size
-      value: 4.747815
+      value: 4.682792
+      objectReference: {fileID: 0}
+    - target: {fileID: 3832318452458034596, guid: 3469048253f694a10a8e2ed2f6eb7e7b,
+        type: 3}
+      propertyPath: orthographic
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3832318452458034597, guid: 3469048253f694a10a8e2ed2f6eb7e7b,
         type: 3}
