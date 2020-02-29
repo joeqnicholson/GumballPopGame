@@ -18,14 +18,19 @@ public class BubbleGrow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if(Gumball.gameOver == false)
         {
-            target = mainCamera.transform.GetComponent<Camera>().ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 10));
-            if (Input.GetButtonUp("Fire1")) { grow = false; }
+            if(Input.touchCount > 0)
+            {
+                target = mainCamera.transform.GetComponent<Camera>().ScreenToWorldPoint(Input.GetTouch(0).position);
+            }
+            
+            if (Input.GetTouch(0).phase == TouchPhase.Ended) { grow = false; }
 
             if (grow == true)
             {
-                transform.position = target;
+                transform.position = new Vector3(target.x,target.y,0);
                 size += Time.deltaTime * 3;
                 if (transform.localScale.x < 2.5f)
                 {

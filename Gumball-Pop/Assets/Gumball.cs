@@ -8,10 +8,11 @@ public class Gumball : MonoBehaviour
     public float launchSpeed;
     Rigidbody2D gumball;
     public GameObject tapToRestart;
-
+    public int score;
 
     void Start()
     {
+        //top = score;
         gumball = GetComponent<Rigidbody2D>();
         gameOver = false;
     }
@@ -23,6 +24,8 @@ public class Gumball : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        
+
         if (collision.gameObject.CompareTag("Bubble"))
         {
             GameObject bubble = collision.gameObject;
@@ -39,7 +42,8 @@ public class Gumball : MonoBehaviour
                 gumball.AddForce(Vector2.up * (bubbleScale - .4f), ForceMode2D.Impulse);
             }
         }
-        else
+
+        if (collision.gameObject.CompareTag("Obstacle"))
         {
             gumball.AddForce(collision.contacts[0].normal, ForceMode2D.Impulse);
             print('h');

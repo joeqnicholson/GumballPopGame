@@ -9,12 +9,15 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 0
-    path: Assets/Menu.unity
-    guid: a99db800249714a4f88503015ddfac9a
-  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
     path: Assets/Menua.unity
     guid: 1d7637ca3d9614064b3737285fadb2c7
   - enabled: 1
-    path: Assets/Main Game Scene.unity
+    path: Assets/TapToStart.unity
     guid: d29155dfc787648acbd9724dec181d5f
+  - enabled: 1
+    path: Assets/MainGame.unity
+    guid: c47b6fd7f2df04ed584b723df6d4ff8d
   m_configObjects: {}

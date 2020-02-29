@@ -5,12 +5,12 @@ using UnityEngine.UI;
 
 public class Score : MonoBehaviour
 {
-    public Transform gumball;
+    public GameObject gumball;
     public Text scoreText;
 
     // Update is called once per frame
     void Update()
     {
-        scoreText.text = gumball.position.x.ToString("0");
+        scoreText.text = gumball.GetComponent<Gumball>().score.ToString();
     }
 }
